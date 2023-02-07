@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Web Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <a href="HomePage.html">
+      <img src="images/crest.jpg" alt="crest">
+      </a>
+      <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="#">Latest</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Tutorials</a></li>
+            </ul>        
+            </li>
+            <li><a href="Shop.html">Team Shop</a>
+                </li>
+            
+            </li>
+            <li><a href="Fixtures.html">Fixtures</a></li>
+            <li><a href="Players.html">Players</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="#">Youth Academy</a></li>
+              <li><a href="#">First Team</a>
+                <!-- Second Tier Drop Down -->
+              <ul>
+                <li><a href="#">Top Scorer</a></li>
+                    </ul>
+                  </li>
+              </ul>
+           
+            <li><a href="League.html">League Table</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+      <form action="/search" method="get">
+        <input type="text" name="query" placeholder="Search...">
+        <button type="submit">Go</button>
+      </form>
+
+    </header>
+    </div>
+    <main>
+     
+      <div id="image-container">
+        <img src="images/fixture1.jpeg" class="image">
+        <img src="images/fixture2.jpeg" class="image">
+        <img src="images/fixture3.jpeg" class="image">
+        <img src="images/fixture4.jpeg" class="image">
+        <img src="images/fixture5.jpeg" class="image">
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="slideshow.js"></script>
+</script>
+
+    <footer>
+      <p>Copyright © 2023 Lough City</p>
+    </footer>
+  </body>
+
+</html>

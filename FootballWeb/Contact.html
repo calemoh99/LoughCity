@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Web Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <a href="HomePage.html">
+      <img src="images/crest.jpg" alt="crest">
+      </a>
+      <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="#">Latest</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Tutorials</a></li>
+            </ul>        
+            </li>
+            <li><a href="Shop.html">Team Shop</a>
+                </li>
+            
+            </li>
+            <li><a href="Fixtures.html">Fixtures</a></li>
+            <li><a href="Players.html">Players</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="#">Youth Academy</a></li>
+              <li><a href="#">First Team</a>
+                <!-- Second Tier Drop Down -->
+              <ul>
+                <li><a href="#">Top Scorer</a></li>
+                    </ul>
+                  </li>
+              </ul>
+           
+            <li><a href="League.html">League Table</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+      <form action="/search" method="get">
+        <input type="text" name="query" placeholder="Search...">
+        <button type="submit">Go</button>
+      </form>
+
+    </header>
+
+    
+      <link rel="stylesheet" href="contactstyle.css"/>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  
+  
+  
+      <div class = "frame">
+  <div id = "button_open_envelope">
+          Email me
+        </div>
+        <div class = "message">
+          <form method="post" action="contact.php">
+            <input type="text" name="name" id="name" placeholder=" Name* " required>
+        
+            <input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
+          
+            <input type="text" name="phone" id="phone" placeholder=" Phone (optional)" autofocus> 
+          
+            <textarea name="message" id="messarea" placeholder=" Message* " required></textarea>
+        
+            <input type="text" name="address" id="address" style="display: none;">
+            <input type="submit" value="Send" id="send">
+          </form>
+        </div>
+        <div class = "bottom"></div>			
+        <div class = "left"></div>
+        <div class = "right"></div>
+        <div class = "top"></div>
+        <script src="contactjava.js"></script>
+      </div>
+    
+    <footer>
+      <p>Copyright © 2023 Lough City</p>
+    </footer>
+
+  </body>
+
+</html>

@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px; /* set a fixed height for the header */
+  background-color: rgb(33, 40, 243); /* add a background color for the header */
+  display: flex; /* use flexbox for layout */
+  align-items: center; /* center the items vertically within the header */
+  justify-content: space-between;
+  position: fixed; /* fix the header to the top of the screen */
+  top: 0; /* align the header to the top of the screen */
+  left: 0; /* align the header to the left of the screen */
+  margin-bottom: 20px;
+}
+
+.container {
+  padding-top: 90px;
+}
+
+header img {
+  background-image: url(images/crest.jpg);
+  background-size: contain;
+  background-position: center;
+  width: 80px; /* set a fixed width for the image */
+  height: 84px; /* set a fixed height for the image */
+  margin-right: 20px; /* add some margin to the right of the image */
+}
+
+nav {
+	background-color: rgb(33, 40, 243);
+}
+ 
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: rgb(33, 40, 243);
+	}
+ 
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+ 
+nav a:hover { 
+	background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+/* Fisrt level Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+ 
+/* Second, Third and more levels	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+main {
+  padding: 1em;
+}
+
+form {
+  display: inline-block;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#image-container {
+  position: absolute;
+  right: 0;
+  width: 400px; /* adjust as needed */
+  height: 400px; /* adjust as needed */
+  border: 10px solid #c3c3c3;
+  border-radius: 10px;
+
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: rgb(167, 167, 167);
+  color: #fff;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
